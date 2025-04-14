@@ -203,6 +203,434 @@ const quotes = [
       after: "WOTAN MEGA INTELLIGENTE",
     },
   },
+  {
+    id: 18,
+    stat: "SAG",
+    category: "Percezione",
+    check: "Passed",
+    parts: {
+      before: "C’è qualcosa che non torna… l’aria è diversa.",
+      smart:
+        "Le vibrazioni nell’ambiente indicano un cambiamento sottile, impercettibile per occhi comuni ma non per la mia consapevolezza istintiva.",
+      after: "Wotan ha annusato verità.",
+    },
+  },
+  {
+    id: 19,
+    stat: "SAG",
+    category: "Percezione",
+    check: "Passed",
+    parts: {
+      before: "Shhh. Silenzio.",
+      smart:
+        "C’è un suono che si nasconde nel silenzio, una presenza che respira piano oltre la soglia del nostro udito.",
+      after: "Wotan sente anche quello che non c’è.",
+    },
+  },
+  {
+    id: 20,
+    stat: "SAG",
+    category: "Percezione",
+    check: "Failed",
+    parts: {
+      before: "Aspetta! Ho visto qualcosa muoversi!",
+      smart:
+        "La posizione dell’ombra era troppo allineata rispetto al vento, quindi deve essere senza dubbio un segno chiaro che—",
+      after: "AH NO SOLO SCOIATTOLO",
+    },
+  },
+  {
+    id: 21,
+    stat: "SAG",
+    category: "Percezione",
+    check: "Failed",
+    parts: {
+      before: "WOTAN ha Occhio di falco, naso di cane, orecchio di… qualcosa.",
+      smart:
+        "Collegando le sensazioni posso affermare che ciò che si cela è molto più vicino di quanto sembri perché—",
+      after: "GUARDA QUEL SASSO HA FORMA DI PATATA",
+    },
+  },
+  {
+    id: 22,
+    stat: "SAG",
+    category: "Sopravvivenza",
+    check: "Passed",
+    parts: {
+      before: "Traccia è fresca. Non tanto vecchia.",
+      smart:
+        "L’impronta è ancora calda e il modo in cui spezza l’erba indica passaggio recente, forse guidato da fretta o paura.",
+      after: "Bestia andata di là. Sicuro.",
+    },
+  },
+  {
+    id: 23,
+    stat: "SAG",
+    category: "Sopravvivenza",
+    check: "Passed",
+    parts: {
+      before: "Vento cambia, odore cambia.",
+      smart:
+        "Le correnti portano al mio naso l'odore da seguire, la strada da seguire è in quella direzione.",
+      after: "Venite amici. seguite Wotan.",
+    },
+  },
+  {
+    id: 24,
+    stat: "SAG",
+    category: "Sopravvivenza",
+    check: "Failed",
+    parts: {
+      before: "Traccia dice molto. Io traduco.",
+      smart:
+        "Vedi, se guardi bene la forma... questo è chiaramente zampa di cervo, o forse una scarpa, o forse—",
+      after: "NO ASPETTA È STAMPA DI MIA FACCIA!",
+    },
+  },
+  {
+    id: 25,
+    stat: "SAG",
+    category: "Sopravvivenza",
+    check: "Failed",
+    parts: {
+      before: "Moscerini in aria. Vuol dire qualcosa.",
+      smart:
+        "Gli insetti seguono i campi magnetici del corpo e si radunano sopra chi ha segreti nella mente e fame nei pensieri.",
+      after: "QUINDI MOSCERINI È COME SASSO!",
+    },
+  },
+  {
+    id: 26,
+    stat: "SAG",
+    category: "Intuizione",
+    check: "Passed",
+    parts: {
+      before: "Occhi suoi mentono, ma cuore no.",
+      smart:
+        "Il modo in cui non ti guarda, ma aspetta la tua reazione, mostra chiaramente che mente... forse anche a sé stesso.",
+      after: "Io fiuto bugia meglio di cane vecchio.",
+    },
+  },
+  {
+    id: 27,
+    stat: "SAG",
+    category: "Intuizione",
+    check: "Passed",
+    parts: {
+      before: "Lo sguardo è troppo fermo.",
+      smart:
+        "Quando qualcuno fissa così, vuol dire che dentro succede tempesta. E se c’è tempesta, c’è colpa.",
+      after: "Io visto cose. Io capito tutto.",
+    },
+  },
+  {
+    id: 28,
+    stat: "SAG",
+    category: "Intuizione",
+    check: "Failed",
+    parts: {
+      before: "Lui parlato strano. Molto strano.",
+      smart:
+        "Tono di voce era troppo... dritto. O troppo rotondo. Quindi sicuramente—",
+      after: "LUI È ALBERO TRASFORMATO!",
+    },
+  },
+  {
+    id: 29,
+    stat: "SAG",
+    category: "Intuizione",
+    check: "Failed",
+    parts: {
+      before: "Ho guardato nei suoi occhi.",
+      smart:
+        "E ho visto un segreto nascosto, un dolore antico, una bugia lunga come—",
+      after: "ASPETTA ERA SPECCHIO!",
+    },
+  },
+  {
+    id: 30,
+    stat: "SAG",
+    category: "Medicina",
+    check: "Passed",
+    parts: {
+      before: "Ferita è brutta ma non mortale.",
+      smart:
+        "Colore del sangue e ritmo del respiro dicono che organi interni sono ancora vivi... per poco.",
+      after: "Stringi denti. Wotan sistema.",
+    },
+  },
+  {
+    id: 31,
+    stat: "SAG",
+    category: "Medicina",
+    check: "Passed",
+    parts: {
+      before: "Ho visto questa roba prima.",
+      smart:
+        "Pelle così gonfia vuol dire veleno lento. Serve solo tempo, calore, e forse preghiera.",
+      after: "O almeno bendaggio forte.",
+    },
+  },
+  {
+    id: 32,
+    stat: "SAG",
+    category: "Medicina",
+    check: "Failed",
+    parts: {
+      before: "Ferita piccola. Io guarisco!",
+      smart:
+        "Serve solo morderla un po’ e poi coprirla con corteccia viva infusa di respiro caldo di Wotan per—",
+      after: "ORA È PIÙ GRANDE MA HA ODORO DI BENE!",
+    },
+  },
+  {
+    id: 33,
+    stat: "SAG",
+    category: "Medicina",
+    check: "Failed",
+    parts: {
+      before: "Io so come si cura.",
+      smart:
+        "Basta premere forte e gridare dentro la ferita così da scacciare il male con paura.",
+      after: "NON FUNZIONA MA ORA NON C'E' PIU' IL MALE!",
+    },
+  },
+  {
+    id: 34,
+    stat: "SAG",
+    category: "Addestrare Animali",
+    check: "Passed",
+    parts: {
+      before: "Animale è confuso. Come me.",
+      smart:
+        "Ma se parli piano e guardi basso, ti accetta. Non serve forza, serve pancia quieta.",
+      after: "Ora è mio amico. Lo chiamo Peluscio.",
+    },
+  },
+  {
+    id: 35,
+    stat: "SAG",
+    category: "Addestrare Animali",
+    check: "Passed",
+    parts: {
+      before: "Bestia ti guarda strano? Guarda strano anche te.",
+      smart:
+        "Riflettere comportamento è chiave. Mostri di essere simile, allora diventi famiglia.",
+      after: "Io e lui ora andiamo a pisciare insieme.",
+    },
+  },
+  {
+    id: 36,
+    stat: "SAG",
+    category: "Addestrare Animali",
+    check: "Failed",
+    parts: {
+      before: "Io domo animale col grido!",
+      smart:
+        "Animali rispondono alla vibrazione della voce potente, e capiscono chi è capobranco se—",
+      after: "ORA MI INSEGUE CON DENTI IN FUORI!",
+    },
+  },
+  {
+    id: 37,
+    stat: "SAG",
+    category: "Addestrare Animali",
+    check: "Failed",
+    parts: {
+      before: "Gli ho dato cibo e carezza.",
+      smart:
+        "Ma forse carezza era su coda sbagliata, o forse quello non era animale, o forse—",
+      after: "ORA GRUGNISCE E MI HA CIUCCIATO MANO.",
+    },
+  },
+  {
+    id: 38,
+    stat: "CAR",
+    category: "Persuasione",
+    check: "Passed",
+    parts: {
+      before: "Lascia che io ti spieghi cosa penso.",
+      smart:
+        "Se ci rifletti davvero, capisci che le nostre strade possono intrecciarsi in un modo che porta beneficio a entrambi.",
+      after: "Dai, ora dai a Wotan quello che vuole.",
+    },
+  },
+  {
+    id: 39,
+    stat: "CAR",
+    category: "Persuasione",
+    check: "Passed",
+    parts: {
+      before: "Io parlare bene, ascolta.",
+      smart:
+        "Le parole, quando usate con onore e un pizzico di miele, possono spezzare muri più duri delle spade.",
+      after: "Ora tu convinto. Anche io convinto.",
+    },
+  },
+  {
+    id: 40,
+    stat: "CAR",
+    category: "Persuasione",
+    check: "Failed",
+    parts: {
+      before: "Se tu fai cosa io dico, io do regalo.",
+      smart:
+        "Tipo… un sasso. Ma non un sasso qualsiasi. Uno che forse... parla? O canta?",
+      after: "NO ASPETTA, PARLA SOLO A ME.",
+    },
+  },
+  {
+    id: 41,
+    stat: "CAR",
+    category: "Persuasione",
+    check: "Failed",
+    parts: {
+      before: "Lascia che io convinca te con parole forti.",
+      smart: "Perché chi non ascolta Wotan... poi ha orecchie che—",
+      after: "CHE CRESCONO! O COSÌ HA DETTO SIGNOR SASSO!",
+    },
+  },
+  {
+    id: 42,
+    stat: "CAR",
+    category: "Intimidazione",
+    check: "Passed",
+    parts: {
+      before: "Guarda bene questi muscoli. Tutti naturali.",
+      smart:
+        "La paura non nasce da urlo, ma dal silenzio prima del colpo. E io sono molto, molto silenzioso.",
+      after: "Adesso parli, o parlo io con pugno.",
+    },
+  },
+  {
+    id: 43,
+    stat: "CAR",
+    category: "Intimidazione",
+    check: "Passed",
+    parts: {
+      before: "Wotan guarda dentro anima.",
+      smart:
+        "E quando vedi riflesso tuo nei miei occhi... capisci che oggi è brutto giorno per sfidare me.",
+      after: "Trema pure. Fa bene alla circolazione.",
+    },
+  },
+  {
+    id: 44,
+    stat: "CAR",
+    category: "Intimidazione",
+    check: "Failed",
+    parts: {
+      before: "GRRRAAAAH! Questo era avvertimento.",
+      smart:
+        "Wotan non urla senza motivo. Urla perché dentro ha... un drago? O un cane gigante? O...",
+      after: "NO, FORSE ERA ARIA NELLO STOMACO.",
+    },
+  },
+  {
+    id: 45,
+    stat: "CAR",
+    category: "Intimidazione",
+    check: "Failed",
+    parts: {
+      before: "Io minacciare bene, guarda!",
+      smart:
+        "Chi non obbedisce avrà... le ginocchia confuse e le sopracciglia mangiate dai... serpenti pensanti!",
+      after: "HA FUNZIONATO? NON SEMBRA!",
+    },
+  },
+  {
+    id: 46,
+    stat: "CAR",
+    category: "Deception",
+    check: "Passed",
+    parts: {
+      before: "No, non io. Mai visto prima.",
+      smart:
+        "Perché le migliori bugie hanno radici nella verità, e io sono bravo a piantare cose... anche dentro menti.",
+      after: "Giuro su Signor Sasso.",
+    },
+  },
+  {
+    id: 47,
+    stat: "CAR",
+    category: "Deception",
+    check: "Passed",
+    parts: {
+      before: "Sì, io mercante di piume rare.",
+      smart:
+        "Queste piume vengono da posto lontano, molto lontano, forse anche inventato ma molto credibile.",
+      after: "Vuoi tre per uno? Solo oggi!",
+    },
+  },
+  {
+    id: 48,
+    stat: "CAR",
+    category: "Deception",
+    check: "Failed",
+    parts: {
+      before: "Io mai rubato. Forse preso in prestito.",
+      smart:
+        "E poi era a terra, quindi tecnicamente di nessuno, quindi di tutti, quindi di me.",
+      after: "ORA IO TI RIDO IN FACCIA PER CONFONDERE!",
+    },
+  },
+  {
+    id: 49,
+    stat: "CAR",
+    category: "Deception",
+    check: "Failed",
+    parts: {
+      before: "Io so mentire bene.",
+      smart: "Tipo... io sono re dei cieli. E tu sei... mio cavallo segreto.",
+      after: "NON GUARDARE COSÌ! È STORIA ANTICA!",
+    },
+  },
+  {
+    id: 50,
+    stat: "CAR",
+    category: "Performance",
+    check: "Passed",
+    parts: {
+      before: "Adesso Wotan canta.",
+      smart:
+        "La voce grezza può portare emozione, e l’emozione può piegare anche i cuori più duri.",
+      after: "Io chiamarla... Canzone del Colpo Forte.",
+    },
+  },
+  {
+    id: 51,
+    stat: "CAR",
+    category: "Performance",
+    check: "Passed",
+    parts: {
+      before: "Storie? Wotan ne ha tante.",
+      smart: "E tutte hanno inizio con pugno, ma finiscono con risata o fuoco.",
+      after: "Questa ha anche finale triste. Tipo capra.",
+    },
+  },
+  {
+    id: 52,
+    stat: "CAR",
+    category: "Performance",
+    check: "Failed",
+    parts: {
+      before: "Ora danzo rituale antico!",
+      smart:
+        "Tradizione dice che chi guarda... piange. Di potere. O di gioia. O—",
+      after: "AH NO ASPETTA HA PRESO FUOCO MANTELLO!",
+    },
+  },
+  {
+    id: 53,
+    stat: "CAR",
+    category: "Performance",
+    check: "Failed",
+    parts: {
+      before: "Io so fare imitazione perfetta di orso.",
+      smart: "Ecco, ruggito profondo, zampa sinistra avanti e poi—",
+      after: "AHIA! HO MORSO ME STESSO!",
+    },
+  },
 ];
 
 export default quotes;
