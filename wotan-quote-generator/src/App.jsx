@@ -11,7 +11,7 @@ function App() {
 
   const [selectedCheck, setSelectedCheck] = useState("");
 
-  const [selectedCategory, useSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   const availableCategories = quotes
     .filter((q) => q.stat === selectedStat)
@@ -20,7 +20,10 @@ function App() {
 
   const getNewQuote = () => {
     const filteredQuotes = quotes.filter(
-      (q) => q.stat === selectedStat && q.check === selectedCheck
+      (q) =>
+        q.stat === selectedStat &&
+        q.check === selectedCheck &&
+        q.category === selectedCategory
     );
 
     if (filteredQuotes.length === 0) return;
@@ -28,9 +31,6 @@ function App() {
     const random = Math.floor(Math.random() * filteredQuotes.length);
     setQuote(filteredQuotes[random]);
   };
-
-  // TO DO NEXT: aggiungere select delle categorie e popolarlo con le categorie
-  // ancora disponibili dopo il .filter.map.filter
 
   return (
     <div>
@@ -45,6 +45,15 @@ function App() {
         <option value="Passed">Passato</option>
         <option value="Failed">Fallito</option>
       </select>
+      <select onChange={(e) => setSelectedCategory(e.target.value)}>
+        <option value="">--Categoria--</option>
+        {availableCategories.map((cat) => (
+          <option key={cat} value={cat}>
+            {cat}
+          </option>
+        ))}
+      </select>
+
       <h1>Wotan Quote Generator</h1>
       <p>{quote.parts.before}</p>
       <p>
