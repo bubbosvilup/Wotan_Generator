@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./data/style/App.css";
 import quotes from "./data/quotes";
+import QuoteCard from "./components/QuoteCard";
+import Dropdown from "./components/Dropdown";
 
 function App() {
-  const [quote, setQuote] = useState(
-    quotes[Math.floor(Math.random() * quotes.length)]
-  );
+  const [quote, setQuote] = useState(null);
 
   // stati filtri selezione
   const [selectedStat, setSelectedStat] = useState("");
@@ -46,29 +46,33 @@ function App() {
     setSelectedCheck("");
     setSelectedCategory("");
   };
-
+  //costante grezza per labels leggibili
+  const statLabels = {
+    INT: "Intelligenza",
+    SAG: "Saggezza",
+    CAR: "Carisma",
+  };
   return (
     <div>
-      <select onChange={(e) => setSelectedStat(e.target.value)}>
-        <option value="">-- Scegli Stat</option>
-        <option value="INT">Intelligenza</option>
-        <option value="SAG">Saggezza</option>
-        <option value="CAR">Carisma</option>
-      </select>
-      <select onChange={(e) => setSelectedCheck(e.target.value)}>
-        <option value="">--Esito Check--</option>
-        <option value="Passed">Passato</option>
-        <option value="Failed">Fallito</option>
-      </select>
-
-      <select onChange={(e) => setSelectedCategory(e.target.value)}>
-        <option value="">--Categoria--</option>
-        {availableCategories.map((cat) => (
-          <option key={cat} value={cat}>
-            {cat}
-          </option>
-        ))}
-      </select>
+      <Dropdown
+        label="Scegli Stat"
+        options={["INT", "SAG", "CAR"]}
+        value={selectedStat}
+        onChange={(e) => setSelectedStat(e.target.value)}
+        labels={statLabels}
+      />
+      <Dropdown
+        label="Esito del Check"
+        options={["Passed", "Failed"]}
+        value={selectedCheck}
+        onChange={(e) => setSelectedCheck(e.target.value)}
+      />
+      <Dropdown
+        label="Categoria"
+        options={availableCategories}
+        value={selectedCategory}
+        onChange={(e) => setSelectedCategory(e.target.value)}
+      />
       <div>
         <p>
           <strong>Stat:</strong> {selectedStat || "-"} | <strong>Esito:</strong>{" "}
@@ -77,11 +81,7 @@ function App() {
         </p>
       </div>
       <h1>Wotan Quote Generator</h1>
-      <p>{quote.parts.before}</p>
-      <p>
-        <em>{quote.parts.smart}</em>
-      </p>
-      <p>{quote.parts.after}</p>
+      <QuoteCard quote={quote} />
       <button onClick={getNewQuote} disabled={isButtonDisabled}>
         Nuova
       </button>
