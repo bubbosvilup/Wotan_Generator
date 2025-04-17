@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./data/style/App.css";
 import quotes from "./data/quotes";
-import QuoteCard from "./components/QuoteCard";
-import Dropdown from "./components/Dropdown";
+import QuoteCard from "./modules/WotanQuoteMachine/QuoteCard";
+import Dropdown from "./modules/WotanQuoteMachine/Dropdown";
 
 function App() {
   const [quote, setQuote] = useState(null);
