@@ -2,6 +2,7 @@ import quotes from "../../data/quotes";
 import Dropdown from "./Dropdown";
 import QuoteCard from "./QuoteCard";
 import { useState, useEffect } from "react";
+import styles from "./WotanQuoteMachine.module.css";
 
 const STAT_OPTIONS = ["INT", "SAG", "CAR"];
 
@@ -43,6 +44,7 @@ function WotanQuoteMachine() {
     setSelectedStat("");
     setSelectedCheck("");
     setSelectedCategory("");
+    setQuote(null);
   };
 
   const statLabels = {
@@ -68,30 +70,37 @@ function WotanQuoteMachine() {
   };
 
   return (
-    <div>
-      <h1>Wotan Quote Generator</h1>
-      <QuoteCard quote={quote} />
-      <Dropdown
-        label="Scegli Stat"
-        options={STAT_OPTIONS}
-        value={selectedStat}
-        onChange={(e) => setSelectedStat(e.target.value)}
-        labels={statLabels}
-      />
-      <Dropdown
-        label="Esito del check"
-        options={["Passed", "Failed"]}
-        value={selectedCheck}
-        onChange={(e) => setSelectedCheck(e.target.value)}
-      />
-      <Dropdown
-        label="Categoria"
-        options={availableCategories}
-        value={selectedCategory}
-        onChange={(e) => setSelectedCategory(e.target.value)}
-      />
+    <div className={styles.wrapper}>
+      <h1 className={styles.title}>Wotan Quote Generator</h1>
+      <div className={styles.dropdownGroup}>
+        <Dropdown
+          label="Scegli Stat "
+          options={STAT_OPTIONS}
+          value={selectedStat}
+          onChange={(e) => setSelectedStat(e.target.value)}
+          labels={statLabels}
+        />
+        <Dropdown
+          label="Esito del check "
+          options={["Passed", "Failed"]}
+          value={selectedCheck}
+          onChange={(e) => setSelectedCheck(e.target.value)}
+        />
+        <Dropdown
+          label="Categoria "
+          options={availableCategories}
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+        />
+      </div>
+      <div className={styles.quoteBox}>
+        <div className={styles.quoteBox}>
+          <QuoteCard quote={quote} />
+        </div>
+      </div>
       <button onClick={randomizeAll}>Mi sento Barbaro!</button>
-      <div>
+      <button onClick={resetFilters}>Reset</button>
+      <div className={styles.summary}>
         <p>
           <strong>Stat:</strong> {selectedStat || "-"} | <strong>Esito:</strong>{" "}
           {selectedCheck || "-"} | <strong>Categoria:</strong>{" "}

@@ -3,8 +3,8 @@ function QuoteCard({ quote }) {
     return (
       <div>
         <p style={{ fontStyle: "italic", color: "gray" }}>
-          Seleziona i filtri e clicca su <strong>Nuova</strong> per generare una
-          frase di Wotan.
+          Seleziona i filtri oppure clicca su <strong>Mi sento Barbaro!</strong>{" "}
+          per generare una frase di Wotan.
         </p>
       </div>
     );
