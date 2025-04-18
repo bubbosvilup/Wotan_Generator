@@ -140,7 +140,7 @@ const quotes = [
       before: "Due più due fa... ASPETTA.",
       smart:
         "Se applichiamo la logica degli insiemi disgiunti nel contesto di una geometria non euclidea con asimmetria iper—",
-      after: "TRE! SICURO CEH FA ALMENO TRE!",
+      after: "TRE! SICURO CHE FA ALMENO TRE!",
     },
   },
   {

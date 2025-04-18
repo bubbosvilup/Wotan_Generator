@@ -94,12 +94,12 @@ function WotanQuoteMachine() {
         />
       </div>
       <div className={styles.quoteBox}>
-        <div className={styles.quoteBox}>
-          <QuoteCard quote={quote} />
-        </div>
+        <QuoteCard quote={quote} />
       </div>
-      <button onClick={randomizeAll}>Mi sento Barbaro!</button>
-      <button onClick={resetFilters}>Reset</button>
+      <div className={styles.buttonContainer}>
+        <button onClick={randomizeAll}>Mi sento Barbaro!</button>
+        <button onClick={resetFilters}>Reset</button>
+      </div>
       <div className={styles.summary}>
         <p>
           <strong>Stat:</strong> {selectedStat || "-"} | <strong>Esito:</strong>{" "}

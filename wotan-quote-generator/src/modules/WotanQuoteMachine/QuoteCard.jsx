@@ -2,7 +2,7 @@ function QuoteCard({ quote }) {
   if (!quote) {
     return (
       <div>
-        <p style={{ fontStyle: "italic", color: "gray" }}>
+        <p style={{ fontStyle: "italic" }}>
           Seleziona i filtri oppure clicca su <strong>Mi sento Barbaro!</strong>{" "}
           per generare una frase di Wotan.
         </p>
