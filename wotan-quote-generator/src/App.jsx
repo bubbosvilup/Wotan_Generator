@@ -1,8 +1,9 @@
 import "./data/style/App.css";
-import WotanQuoteMachine from "./modules/WotanQuoteMachine/WQM_index";
+import Diario from "./pages/Diario";
+import DressUp from "./modules/WotanDressUp/DressUp";
 
 function app() {
-  return <WotanQuoteMachine />;
+  return <DressUp />;
 }
 
 export default app;

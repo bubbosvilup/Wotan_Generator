@@ -1,0 +1,32 @@
+.wrapper {
+  width: 450px;
+  height: 720px;
+  position: relative;
+  margin: 2rem auto;
+  background-color: #2d1b0e;
+  border: 2px solid #5c3b1e;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000;
+  overflow: hidden;
+}
+
+.base {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  z-index: 1;
+}
+
+.hair {
+  position: absolute;
+  width: 50%;
+  left: 23%;
+  top: 2%;
+  pointer-events: none;
+  z-index: 2;
+}

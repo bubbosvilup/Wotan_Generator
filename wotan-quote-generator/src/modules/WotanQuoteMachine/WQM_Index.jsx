@@ -4,7 +4,11 @@ import QuoteCard from "./QuoteCard";
 import { useState, useEffect } from "react";
 import styles from "./WotanQuoteMachine.module.css";
 
-const STAT_OPTIONS = ["INT", "SAG", "CAR"];
+const statOptions = [
+  { value: "INT", label: "🧠 Intelligenza" },
+  { value: "SAG", label: "🧙 Saggezza" },
+  { value: "CAR", label: "🗣️ Carisma" },
+];
 
 function WotanQuoteMachine() {
   const [quote, setQuote] = useState(null);
@@ -75,7 +79,7 @@ function WotanQuoteMachine() {
       <div className={styles.dropdownGroup}>
         <Dropdown
           label="Scegli Stat "
-          options={STAT_OPTIONS}
+          options={statOptions}
           value={selectedStat}
           onChange={(e) => setSelectedStat(e.target.value)}
           labels={statLabels}

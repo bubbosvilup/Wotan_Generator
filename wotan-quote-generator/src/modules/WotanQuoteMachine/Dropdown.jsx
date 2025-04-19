@@ -4,11 +4,18 @@ function Dropdown({ label, options, value, onChange, labels }) {
       <label>{label}</label>
       <select value={value} onChange={onChange}>
         <option value="">--{label}</option>
-        {options.map((option) => (
-          <option key={option} value={option}>
-            {labels && labels[option] ? labels[option] : option}
-          </option>
-        ))}
+        {options.map((option) => {
+          const value = typeof option === "object" ? option.value : option;
+          const label =
+            typeof option === "object"
+              ? option.label
+              : labels?.[option] || option;
+          return (
+            <option key={value} value={value}>
+              {label}
+            </option>
+          );
+        })}
       </select>
     </div>
   );
