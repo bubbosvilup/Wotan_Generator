@@ -10,6 +10,20 @@
   overflow: hidden;
 }
 
+.title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: "Grenze Gotisch", cursive;
+  color: #f5d77b;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 3px #000, 0 0 10px #7a3b00;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #a05e2e;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
 .base {
   width: 90%;
   display: block;
@@ -22,11 +36,55 @@
   z-index: 1;
 }
 
-.hair {
+.hair1 {
+  position: absolute;
+  width: 50%;
+  left: 23%;
+  top: 2.5%;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.hair2 {
   position: absolute;
   width: 50%;
   left: 23%;
   top: 2%;
   pointer-events: none;
-  z-index: 2;
+  z-index: 4;
+}
+
+.hair3 {
+  position: absolute;
+  width: 50%;
+  left: 23%;
+  top: 3%;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.buttonBar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.buttonBar button {
+  padding: 0.5rem 1rem;
+  background-color: #5c3b1e;
+  color: #fdf6e3;
+  border: 2px solid #a05e2e;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Cinzel", serif;
+  transition: all 0.2s ease;
+}
+
+.buttonBar button:hover {
+  background-color: #7a4a25;
+  border-color: #d68c45;
 }
