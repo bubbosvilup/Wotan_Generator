@@ -63,6 +63,51 @@
   z-index: 4;
 }
 
+.hair5 {
+  position: absolute;
+  width: 50%;
+  left: 23%;
+  top: 2.5%;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.chest1 {
+  position: absolute;
+  width: 95%;
+  left: 0.5%;
+  top: 4.8%;
+  transform: rotate(-1deg);
+  z-index: 3;
+}
+
+.chest2 {
+  position: absolute;
+  width: 95%;
+  left: 0.5%;
+  top: 4.8%;
+  transform: rotate(-1deg);
+  z-index: 3;
+}
+
+.chest3 {
+  position: absolute;
+  width: 90%;
+  left: 10%;
+  top: 10%;
+  transform: rotate(-1deg);
+  z-index: 3;
+}
+
+.chest4 {
+  position: absolute;
+  width: 90%;
+  left: 10%;
+  top: 10%;
+  transform: rotate(-1deg);
+  z-index: 3;
+}
+
 .buttonBar {
   display: flex;
   justify-content: center;
